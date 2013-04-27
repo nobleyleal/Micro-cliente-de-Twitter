@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1AB81D172B6AA80063E35C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AB81C172B6AA80063E35C /* Twitter.framework */; };
+		BE1AB81F172B6AC00063E35C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AB81E172B6AC00063E35C /* Social.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		BE1AB821172B6AC60063E35C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AB820172B6AC60063E35C /* Accounts.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		BE1AB825172B6F460063E35C /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB824172B6F460063E35C /* TweetCell.m */; };
+		BE1AB827172B70000063E35C /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1AB826172B70000063E35C /* TweetCell.xib */; };
+		BE1AB82C172B77F00063E35C /* DetailTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1AB82B172B77F00063E35C /* DetailTweet.m */; };
+		BE1AB830172C57170063E35C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1AB82F172C57170063E35C /* QuartzCore.framework */; };
 		BE4F940B172ACC360008C5EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4F940A172ACC360008C5EE /* UIKit.framework */; };
 		BE4F940D172ACC360008C5EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4F940C172ACC360008C5EE /* Foundation.framework */; };
 		BE4F940F172ACC360008C5EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4F940E172ACC360008C5EE /* CoreGraphics.framework */; };
@@ -22,6 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1AB81C172B6AA80063E35C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		BE1AB81E172B6AC00063E35C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BE1AB820172B6AC60063E35C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BE1AB823172B6F460063E35C /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		BE1AB824172B6F460063E35C /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		BE1AB826172B70000063E35C /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		BE1AB82A172B77F00063E35C /* DetailTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTweet.h; sourceTree = "<group>"; };
+		BE1AB82B172B77F00063E35C /* DetailTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTweet.m; sourceTree = "<group>"; };
+		BE1AB82F172C57170063E35C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BE4F9407172ACC360008C5EE /* Micro cliente de Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Micro cliente de Twitter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4F940A172ACC360008C5EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE4F940C172ACC360008C5EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1AB830172C57170063E35C /* QuartzCore.framework in Frameworks */,
+				BE1AB821172B6AC60063E35C /* Accounts.framework in Frameworks */,
+				BE1AB81F172B6AC00063E35C /* Social.framework in Frameworks */,
+				BE1AB81D172B6AA80063E35C /* Twitter.framework in Frameworks */,
 				BE4F940B172ACC360008C5EE /* UIKit.framework in Frameworks */,
 				BE4F940D172ACC360008C5EE /* Foundation.framework in Frameworks */,
 				BE4F940F172ACC360008C5EE /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +75,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE1AB822172B6EF10063E35C /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BE1AB823172B6F460063E35C /* TweetCell.h */,
+				BE1AB824172B6F460063E35C /* TweetCell.m */,
+				BE1AB826172B70000063E35C /* TweetCell.xib */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		BE1AB828172B77C70063E35C /* Detail Tweet */ = {
+			isa = PBXGroup;
+			children = (
+				BE1AB82A172B77F00063E35C /* DetailTweet.h */,
+				BE1AB82B172B77F00063E35C /* DetailTweet.m */,
+			);
+			name = "Detail Tweet";
+			sourceTree = "<group>";
+		};
 		BE4F93FE172ACC360008C5EE = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +114,10 @@
 		BE4F9409172ACC360008C5EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE1AB82F172C57170063E35C /* QuartzCore.framework */,
+				BE1AB820172B6AC60063E35C /* Accounts.framework */,
+				BE1AB81E172B6AC00063E35C /* Social.framework */,
+				BE1AB81C172B6AA80063E35C /* Twitter.framework */,
 				BE4F940A172ACC360008C5EE /* UIKit.framework */,
 				BE4F940C172ACC360008C5EE /* Foundation.framework */,
 				BE4F940E172ACC360008C5EE /* CoreGraphics.framework */,
@@ -85,6 +128,8 @@
 		BE4F9410172ACC360008C5EE /* Micro cliente de Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				BE1AB828172B77C70063E35C /* Detail Tweet */,
+				BE1AB822172B6EF10063E35C /* Custom Cell */,
 				BE4F9419172ACC360008C5EE /* AppDelegate.h */,
 				BE4F941A172ACC360008C5EE /* AppDelegate.m */,
 				BE4F9422172ACC360008C5EE /* MainStoryboard_iPhone.storyboard */,
@@ -167,6 +212,7 @@
 				BE4F9421172ACC360008C5EE /* Default-568h@2x.png in Resources */,
 				BE4F9424172ACC360008C5EE /* MainStoryboard_iPhone.storyboard in Resources */,
 				BE4F9427172ACC360008C5EE /* MainStoryboard_iPad.storyboard in Resources */,
+				BE1AB827172B70000063E35C /* TweetCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +226,8 @@
 				BE4F9417172ACC360008C5EE /* main.m in Sources */,
 				BE4F941B172ACC360008C5EE /* AppDelegate.m in Sources */,
 				BE4F942A172ACC360008C5EE /* ViewController.m in Sources */,
+				BE1AB825172B6F460063E35C /* TweetCell.m in Sources */,
+				BE1AB82C172B77F00063E35C /* DetailTweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +360,7 @@
 				BE4F942F172ACC360008C5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
